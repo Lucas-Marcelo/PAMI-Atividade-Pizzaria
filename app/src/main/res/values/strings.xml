@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pizzaria Horácio</string>
+    <string name="lblTitulo">PIZZARIA HORÁCIO</string>
+    <string name="lblChopp">Chopps: </string>
+    <string name="lblPizza">Pizzas: </string>
+    <string name="lblRecheio">Recheios: </string>
+    <string name="lblPessoa">Pessoas: </string>
+    <string name="lblConsumo">Consumo: </string>
+    <string name="lblServico">Serviço: </string>
+    <string name="lblTotal">Total: </string>
+    <string name="lblTotalPessoa">Total por pessoa: </string>
+    <string name="btnCalcular">CALCULAR</string>
+</resources>
