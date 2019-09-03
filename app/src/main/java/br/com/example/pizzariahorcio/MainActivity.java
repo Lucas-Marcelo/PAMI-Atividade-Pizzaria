@@ -40,9 +40,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void OnCalcular (View v)
     {
+        double valor0 = Double.parseDouble(txtPessoa.getText().toString());
+
         if(txtChopp.getText().toString().isEmpty() || txtPizza.getText().toString().isEmpty() || txtRecheio.getText().toString().isEmpty() || txtPessoa.getText().toString().isEmpty())
         {
             Toast.makeText(this,"Insira valores nos campos vazios", Toast.LENGTH_SHORT).show();
+        }
+        else if (valor0 == 0)
+        {
+            Toast.makeText(this,"Insira um valor acima de 0.", Toast.LENGTH_SHORT).show();
         }
         else
         {
@@ -51,8 +57,7 @@ public class MainActivity extends AppCompatActivity {
             double recheio = Double.parseDouble(txtRecheio.getText().toString()) * 5.90;
             double pessoa = Double.parseDouble(txtPessoa.getText().toString());
 
-
-            double resultadoConsumo = (chopp + pizza + recheio);
+            double resultadoConsumo = chopp + pizza + recheio;
             double resultadoServico = (resultadoConsumo * 10) / 100;
             double resultadoTotal = resultadoConsumo + resultadoServico;
             double resultadoTotalPessoa = resultadoTotal / pessoa;
